@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="CSS/css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1><b>Passagem Versão 9.04.00</b></h1>
+
+        <table class="table-container tablecss table-bordered">
+            <tr>
+                <th>ID</th>
+                <th>NUMERO_OS</th>
+                <th>DESC_TAREFA</th>
+            </tr>
+        </table>
+
+        <table class="table-container tableitens table-bordered" id="tabela">
+
+
+            <tr>
+                <td>11.262</td>
+                <td>0000</td>
+                <td>Ao criar um novo registro de relatório quando informa a CLASSE_CADASTRO = TFrmEmiteRelatorioPadrao
+                    ao ir
+                    na opçao CONFIGUAR RELATÒRIO, o sistema esta demorando muito para abrir a tela de edição do
+                    relatório<br><br>EXEMPLO: Relatório ID 42 no banco infrmado<br><br>Ao alterar o relatório oficial id
+                    114, tambem apresenta lentidão para abrir a edição</td>
+            </tr>
+            <tr class="odd">
+                <td>11.421</td>
+                <td>0000</td>
+                <td>Ao solicitar oe nvio de e-mail das Notas Fiscais junto com o boleto, não enviar o boleto quando o
+                    mesmo ja estiver baixado</td>
+            </tr>
+            <tr class="odd">
+                <td>11.428</td>
+                <td>0000</td>
+                <td>Aterar o filtro de produto para aceitar CTRL+V</td>
+            </tr>
+            <tr class="odd">
+                <td>11.434</td>
+                <td>0000</td>
+                <td>1-Ao clonar uma empresa é retonado o seguinte erro CDSERVICOS_WINDOWS_AGENDA: Impossível realizar
+                    esta operação em um dataset fechado</td>
+            </tr>
+            <tr class="odd">
+                <td>11.384</td>
+                <td>0000</td>
+                <td>Melhorar a segurança do valor da tag GUID_ACESSO_SERVIDOR_DATA_SNAP</td>
+            </tr>
+            <tr class="odd">
+                <td>11.434</td>
+                <td>0000</td>
+                <td>Aumentar a fonte da tela de vendas de balcão e de todas as telas que são abertas pela tela de vendas
+                </td>
+            </tr>
+            <tr>
+                <td>11.435</td>
+                <td>0000</td>
+                <td>1-No banco VICTOR-PC:GRADE ao tentar salvar a nota cod 98601 é retornado o erro "Erro Gravando Nota.
+                    [FireDAC][Phys][FB]Dynamic SQL Error SQL error code = -104 Unexpected end of command - line 1,
+                    column 1
+                    At trigger 'TG_AT_EST_MIN_ALTER_COD_PROD' line: 19, col: 5 At block line: 18, col: 1"</td>
+            </tr>
+            <tr class="odd">
+                <td>11.253</td>
+                <td>5.057</td>
+                <td>*Processo de clonagem de Nota Fiscal deve parar de clonar a série e o número da nota.<br>*Processo
+                    de
+                    inutilizar faixa de numeração, opção Verificar faixas não utilizadas. Se a faixa inutilizada for
+                    superior a 10000 números, lançar registros complementares até que chegue no valor final.<br>Dica:
+                    procedure TFrmCadNotas_Fiscais.AdicionarCamposNaoClonar; Override;</td>
+            </tr>
+            <tr>
+                <td>11.403</td>
+                <td>5.140</td>
+                <td>1-Criar forma de interrompoer a conferencia no meio do processo e retomar de onde parou
+                    posteriormente,
+                    A depender da regra de negócio da empresa, a operadora de caixa pode preferir interromper uma
+                    conferência de 99 itens para passar 1 venda com 1 único item, e voltar a conferencia de onde havia
+                    parado<br>2-Criar na tela de cadastro de pre venda uma nova coluna CONFERIDO "Sim/Nao" <br>3-Adaptar
+                    o
+                    relatório ID 104 adicionadno o filtro CONFERIDO "Sim/Nao/Todos"<br>4-Ao inserir novo item ou
+                    cancelar
+                    itens pela tela de conferencia de pre venda, esta sendo necessario recarregar a tela de pre venda
+                    para
+                    visualizar os movimentos<br>5-Em bancos com grade, nao esta sendo exibido a coluna com a combinação
+                    do
+                    produto, na tela de conferencia de pré venda</td>
+            </tr>
+            <tr class="odd">
+                <td>11.257</td>
+                <td>5.353</td>
+                <td>Criar a opçao de informar o dependente na prevenda</td>
+            </tr>
+            <tr>
+                <td>11.341</td>
+                <td>5.374</td>
+                <td>Ao exportar o cliente para o pedido on, enviar tambem as informações de endereço</td>
+            </tr>
+            <tr class="odd">
+                <td>11.260</td>
+                <td>5.376</td>
+                <td>NO On Exit do filtro de cliente, se não tiver veículo associado, não limpar os dados de MARCA,
+                    MODELO,
+                    TIPO</td>
+            </tr>
+            <tr>
+                <td>11.242</td>
+                <td>5.410</td>
+                <td>Alterar o campo PROBLEMA da tabela ORDEM_SERVICO para BLOB, altualmente esta como VARCHAR(400)</td>
+            </tr>
+            <tr class="odd">
+                <td>11.438</td>
+                <td>5.415</td>
+                <td>Quando tem uma nota que existe o campo (Crédito de ICMS Aproveitado) preenchido, quando tira o
+                    relatório
+                    de conferencia de icms, o valor de base de calculo e icms, aparecem zerados.<br>No Sped, vai
+                    corretamente com valor de base e icms <br><br>Relatório de conferencia de icm<br>nota numero 3543
+                    dia
+                    29/02</td>
+            </tr>
+            <tr>
+                <td>11.263</td>
+                <td>5.418</td>
+                <td>Aletara o relatório ID = 114 - IMPRIMIR COMPROVANTE, nao esta considerando os itens
+                    Cancelados<br><br>Pode pegar o relatório no banco, foi alterado o SCRIPT e os OBJETOS</td>
+            </tr>
+            <tr class="odd">
+                <td>11.258</td>
+                <td>5.420</td>
+                <td>Salvar a opsicão e tamanho dos grids das tela por usuario</td>
+            </tr>
+            <tr>
+                <td>11.265</td>
+                <td>5.421</td>
+                <td>Inserir o relatório em anexo na versão (Vale presente)</td>
+            </tr>
+            <tr class="odd">
+                <td>11.342</td>
+                <td>5.428</td>
+                <td>Criar na tela de Processo de Balanço a opção de inserir registros zerando o estoque, dos produtos q
+                    nao
+                    foram contados por grupo, deverá abrir a tela de cadastro de grupos, onde o cliente irá selecionar o
+                    grupo e zerar o estoque dos produtos pertencentes ao grupo</td>
+            </tr>
+            <tr>
+                <td>11.381</td>
+                <td>5.432</td>
+                <td>Ao fazer um registro de contas a paga, ao clicar no botão INSERIR para inserir a Natureza, o sistema
+                    puxa o codigo da natureza padrão do contas a pagar preenchida na empresa, porem se trocar a
+                    natureza, na
+                    gravação do contas a pagar o sistema insere novamente a natureza padrão</td>
+            </tr>
+            <tr class="odd">
+                <td>11.354</td>
+                <td>5.445</td>
+                <td>Na tela de consulta de boletos, criar a opçaõ de enviar boleto via WhatsApp</td>
+            </tr>
+            <tr>
+                <td>11.353</td>
+                <td>5.450</td>
+                <td>Ao abrir a tela de emissões&gt;movimentos&gt;estoque&gt;estoque e tirar o relatório, depois que
+                    fecha o
+                    relatório, a tela fica cortada embaixo, não conseguindo gerar de novo o relatório, precisando sair e
+                    entrar novamente.</td>
+            </tr>
+            <tr class="odd">
+                <td>11.344</td>
+                <td>5.454</td>
+                <td>Na tela de cadastro de produtos, voltar a marcar os produtos inativos na cor vermelha</td>
+            </tr>
+            <tr>
+                <td>11.347</td>
+                <td>5.460</td>
+                <td>Criar parametro para enviar mensagens apenas em dias uteis</td>
+            </tr>
+            <tr class="odd">
+                <td>11.369</td>
+                <td>5.470</td>
+                <td>Alterar o relatório ID 104 para o relatório em anexo<br>ao selecionar a versão SEM ITEM Verificar
+                    uma
+                    forma de desabilidtar o filtro de produtos e os radio group referente aos itens da pre venda</td>
+            </tr>
+            <tr>
+                <td>11.345</td>
+                <td>5.473</td>
+                <td>1-Ao inserir cliente esta retornando Access Violation<br>2-Ao enviar estatisticas esta retornando
+                    Conection time out</td>
+            </tr>
+            <tr class="odd">
+                <td>11.375</td>
+                <td>5.475</td>
+                <td>Ao fazer uma nota fiscal informando desconto nos itens, no PDF da nota o campo VL_TOTAL nao esta
+                    abatendo o valor do desconto informado</td>
+            </tr>
+            <tr>
+                <td>11.360</td>
+                <td>5.477</td>
+                <td>Na tela Insere Contrato Clientes, Insere Cliente -&gt; aba Contratos/Mensalidades o botão "Excluir
+                    Produto" (X vermelho), nao esta excluindo</td>
+            </tr>
+            <tr class="odd">
+                <td>11.382</td>
+                <td>5.481</td>
+                <td>Na tela Insere Forma Pagamento, alterar o parametro "Emitir Boleto" para usar RadioButton com as
+                    opções
+                    "Não/Sim/Perguntar"</td>
+            </tr>
+            <tr>
+                <td>11.385</td>
+                <td>5.485</td>
+                <td>934-rejeiçao : não informado valor do icms desonerado ou o motivo da desoneracao no item 1</td>
+            </tr>
+            <tr class="odd">
+                <td>11.350</td>
+                <td>5.486</td>
+                <td>Tela de envios mensagens:<br> Criar label com contagem de registros<br> Criar filtro por data
+                    (gravação
+                    ou Envio)</td>
+            </tr>
+            <tr>
+                <td>11.406</td>
+                <td>5.488</td>
+                <td>Permitir importar orçamento na pre-venda</td>
+            </tr>
+            <tr class="odd">
+                <td>11.402</td>
+                <td>5.494</td>
+                <td>divergência entre relatórios que deveriam mostrar o mesmo valor (CMV x VENDA)<br>Estatística de
+                    Vendas
+                    Por Fabricantes<br>Itens Vendas Por Período <br>Balança de Compra e Venda</td>
+            </tr>
+            <tr>
+                <td>11.404</td>
+                <td>5.495</td>
+                <td>Ao desmarcar o prametro "Excluir contas receber no cancelamento de venda" ao cancelar uma venda deve
+                    excluir o movimento financeiro referente a venda</td>
+            </tr>
+            <tr class="odd">
+                <td>11.419</td>
+                <td>5.508</td>
+                <td>Ao realizar uma devolução de vendas, inserir um novo campo com o usuario logado que fez a devolução
+                </td>
+            </tr>
+            <tr>
+                <td>11.423</td>
+                <td>5.509</td>
+                <td>Altarar no banco oficial o valor dos campos:<br> EMPRESAS.HOST_SERVIDOR_EXATA = 201.73.219.36<br>
+                    EMPRESAS.HOST_ALTERNATIVO_SERVIDOR_EXATA =exataalternativo.ddns.net</td>
+            </tr>
+            <tr class="odd">
+                <td>11.429</td>
+                <td>5.510</td>
+                <td>1-Ao imprimir um boleto, o NUMERO do endereço do pagador nao esta saindo<br>2- tela de Insere Conta
+                    Financeira -&gt; Aba ACBR, Parâmetro "Remover Acentuação" nao esta removendo a acentuação do
+                    endereço ao
+                    enviar boleto via WEBSERVICE</td>
+            </tr>
+            <tr>
+                <td>11.437</td>
+                <td>5.514</td>
+                <td>Ao refaturar a venda cupom 13295, serie 4 empresa 513, alterando a parcela de dinheiro para pix pe
+                    retornado o erro "[FireDAC][Phys][FB]Dynamic SQL Error SQL error code = -104 Token unknown - line 1,
+                    column 88 COD_EMPRESA"</td>
+            </tr>
+            <tr class="odd">
+                <td>11.250</td>
+                <td>4.789</td>
+                <td>Criar uma nova tela que permita dar desconto em itens ja lancados na venda.</td>
+            </tr>
+            <tr>
+                <td>10.871</td>
+                <td>5.070</td>
+                <td>Habilitar o cancelamento por substitucao, conforme a Nota Técnica 2018.004 da NFCe</td>
+            </tr>
+            <tr class="odd">
+                <td>11.251</td>
+                <td>5.140</td>
+                <td>*Criar tela de conferência de pré-venda. PARAMETRIZAR NA EMPRESA.<br>*Listar os itens
+                    individualmente
+                    com a quantidade 1 para ir bipando no leitor e marcando na lista.<br>*Parâmetro: Flegar a pré-venda
+                    como
+                    conferido e só permitir a importação quando conferido.<br>*Criar esta opção no menu popup da
+                    pré-venda e
+                    na tela de importação de pré-venda da venda de balcão e no registro de venda (Importar
+                    pré-venda).<br>*Totalizar os itens conferidos.<br>*Os itens não bipados serão cancelados da
+                    pré-venda
+                    antes de importar na venda. Criar acesso para isto.<br>*Os itens bipados que não estão na lista
+                    deverão
+                    ser registrados automaticamente. Criar codigo de cores para registros conferidos, não conferidos e
+                    inseridos sem estar na lista. <br>*Criar acesso para remover item da lista.<br>*Detalhar o log de
+                    usuário na conferencia.<br><br>*Obs. fora de contexto. A tela de importação de pré-vendas está, na
+                    pesquisa, permitidno selecionar múltiplos itens. Na pesquisa tem que desabilitar a seleção.</td>
+            </tr>
+            <tr>
+                <td>11.255</td>
+                <td>5.155</td>
+                <td>Criar cadastro simplificado de clientes.<br>*Colocar no menu dos clientes
+                    Cadastros/Clientes/Cadastro
+                    simplificado<br>*Este cadastro será apenas a "tela de inserção".<br>*Poderá funcionar como um toten
+                    com
+                    fullscreen utilizando senha pra sair ou utilizar de forma livre. Definido por acesso.<br>*Utilizar a
+                    mesma tela do cadastro rápido de clientes na venda de balcão.<br>*As informações que irão aparecer
+                    na
+                    tela para preenchimento serão: Nome, Telefone, CEP, número, Dt. Nasc. CPF, e-mail. O usuário deverá
+                    poder informar quais dados serão obrigatórios além do nome do cliente. Obviamente o cliente será
+                    pessoa
+                    física. O CPF só será validado se for preenchido. O endereço será preenchido pelo CEP. O CEP deverá
+                    ser
+                    consultado ao sair do campo. Atualizar as informações padrão caso não sejam preenchidas. Caso o
+                    TELEFONE
+                    já tiver sido cadastrado, oferecer para o usuário carregar os dados encontrados.<br>*Exibir o ID do
+                    cliente.<br>*Ao finalizar o cadastro, limpar tudo e dar a mensagem com o Código do cliente.<br>*No
+                    cadastro tradicional, padrão, opressor de clientes, liberar campos no cadastro apenas no alterar e
+                    caso
+                    já esteja assim no cadastro.</td>
+            </tr>
+            <tr class="odd">
+                <td>11.254</td>
+                <td>5.291</td>
+                <td>Todos os funcionarios da empresa estao visualizando os produtos de uso e consumo e ativo
+                    imobilizado.
+                </td>
+            </tr>
+            <tr>
+                <td>11.259</td>
+                <td>5.407</td>
+                <td>Implementar decreto referente ao vale presente
+                    <br><br>https://www.legisweb.com.br/legislacao/?id=447952#:~:text=Introduz%20alterações%20no%20RICMS%2FES,que%20lhe%20confere%20o%20art.
+                </td>
+            </tr>
+            <tr class="odd">
+                <td>11.256</td>
+                <td>5.419</td>
+                <td>Melhorar a agilidade no retorno dos produtos no Cadastro de produtos. CadProduto.</td>
+            </tr>
+            <tr class="fim" style="text-align: center;">
+                <td>FIM!!!</td>
+            </tr>
+
+        </table>
+
+        <div class=" button-container">
+
+            <button class="btn btn-danger" onclick="anterior()">Anterior</button>
+            <button class="btn btn-success" onclick="proximo()">Proximo</button> 
+            <p>Registro Atual: <span id="RegistroAtualVL"></span> Total Registro: <span id="TotalRegistroVL"></span></p>
+
+        </div>
+
+
+    </div>
+
+    <script src="SCRIPT/js.js"></script>
+</body>
+
+</html>
